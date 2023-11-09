@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/open-traffic-generator/snappi/gosnappi v0.13.0
 	github.com/sirupsen/logrus v1.9.3
-	github.com/vbauerster/mpb/v7 v7.4.1
+	github.com/vbauerster/mpb/v7 v7.5.3
 )
 
 require (
