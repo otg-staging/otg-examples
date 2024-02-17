@@ -66,7 +66,7 @@ on:
 jobs:
   paths-filter:
     name: Filter changes to subfolders
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     outputs:
       docker-compose-b2b: ${{ steps.changes.outputs.docker-compose-b2b }}
       docker-compose-b2b-3pair: ${{ steps.changes.outputs.docker-compose-b2b-3pair }}
@@ -138,7 +138,7 @@ jobs:
         run: echo "Run hybrid fp-b2b CI"
   docker-compose-b2b:
     name: Run docker-compose b2b CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -152,7 +152,7 @@ jobs:
         run:  make all
   docker-compose-b2b-3pair:
     name: Run docker-compose b2b-3pair CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -166,7 +166,7 @@ jobs:
         run:  make all
   docker-compose-cpdp-b2b:
     name: Run docker-compose cpdp-b2b CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -180,7 +180,7 @@ jobs:
         run:  make all
   docker-compose-cpdp-frr:
     name: Run docker-compose cpdp-frr CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -194,7 +194,7 @@ jobs:
         run:  make all
   clab-cpdp-frr:
     name: Run containerlab cpdp-frr CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -208,7 +208,7 @@ jobs:
         run:  make all-clab
   clab-ixia-c-b2b:
     name: Run Clab ixia-c-b2b CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -222,7 +222,7 @@ jobs:
         run:  make all
   clab-ixia-c-b2b-lag:
     name: Run Clab ixia-c-b2b-lag CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -236,7 +236,7 @@ jobs:
         run:  make all
   clab-ixia-c-te-frr:
     name: Run Clab ixia-c-te-frr CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -250,7 +250,7 @@ jobs:
         run:  make all
   clab-rtbh:
     name: Run Clab RTBH CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
@@ -270,7 +270,7 @@ jobs:
         run:  make all
   hybrid-fp-b2b:
     name: Run hybrid fp-b2b CI
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     needs: paths-filter
     defaults:
       run:
