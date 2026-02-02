@@ -24,7 +24,7 @@ services:
         max-file: "10"
         mode: "non-blocking"
   layer23-hw-server:
-    image: ghcr.io/open-traffic-generator/keng-layer23-hw-server:0.13.0-2
+    image: ghcr.io/open-traffic-generator/keng-layer23-hw-server:0.13.2-2
     restart: always
     command:
       - "dotnet"
